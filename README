@@ -1,1 +1,59 @@
+SignBridge 
+
+---
+
+Team Name:
+**Your Team Name Here**
+
+Team Members:
+- Member 1 Name  
+- Member 2 Name  
+- Member 3 Name  
+(Add or remove as needed
+
+Project Name:
+SignBridge – Bridging the Communication Gap with Hand Signs
+
+Project Abstract
+
+SignBridge is a simple real-time hand gesture recognition system that helps non-sign-language users communicate easily with deaf and mute individuals. It uses a webcam to detect basic hand signs and displays the meaning on the screen using text. The goal is to break communication barriers by providing an easy-to-use, real-time tool — with no prior sign language knowledge required.
+
+---
+
+🧰 Tech Stack
+
+| Part                  | Tool Used            |
+|-----------------------|----------------------|
+| Language              | Python               |
+| Hand Tracking         | MediaPipe (Google)   |
+| Webcam Access & UI    | OpenCV               |
+| Code Hosting          | GitHub               |
+| Environment           | Local (Laptop/Desktop) |
+| (Future Scope)        | Text-to-Speech, TensorFlow |
+
+--
+Dataset Used
+
+No dataset used in this version.
+Gestures are recognized using **rule-based logic** on hand landmarks (no machine learning).
+(Future Plan): Use gesture image dataset to train a model with TensorFlow.
+
+---
+
+How It Works
+
+1. The webcam opens and captures your hand.
+2. **MediaPipe** detects hand landmarks (21 key points).
+3. **OpenCV** displays the live video and overlays detected gesture text.
+4. Simple logic (no ML) checks if fingers are open/closed.
+5. Displays the corresponding gesture meaning (e.g., “Hello 👋”).
+
+---
+
+How to Run
+
+1. Install Dependencies
+
+```bash
+pip install mediapipe opencv-python
 
